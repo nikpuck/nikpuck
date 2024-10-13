@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staking Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Staking Earnings Calculator</h1>
+        <button id="connectWallet">Connect Wallet</button>
+        <p id="walletAddress">Wallet Address: <span>Not connected</span></p>
+
+        <div id="calculator">
+            <label for="stakeAmount">Enter amount to stake (ETH):</label>
+            <input type="number" id="stakeAmount" placeholder="0">
+            
+            <label for="apy">Annual Percentage Yield (APY):</label>
+            <input type="number" id="apy" placeholder="5">
+
+            <button id="calculateEarnings" disabled>Calculate Earnings</button>
+        </div>
+
+        <p id="result">Your estimated earnings: <span>0</span> ETH</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
